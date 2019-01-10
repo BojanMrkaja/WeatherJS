@@ -59,5 +59,6 @@ function getWeather(e) {
     } else {
         alertDanger.classList.remove('d-none');
         alertDanger.classList.add('d-block');
+        document.querySelector('.show').innerHTML = ``;
     }
 }
