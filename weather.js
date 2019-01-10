@@ -17,7 +17,7 @@ function getWeather(e) {
     const xhr = new XMLHttpRequest();
 
     if (inputVal != '') {
-        xhr.open('GET', `http://api.openweathermap.org/data/2.5/weather?q=${inputVal}&units=metric&APPID=${apiKey}`, true);
+        xhr.open('GET', `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&units=metric&APPID=${apiKey}`, true);
 
         xhr.onload = function () {
             if (this.status === 200) {
