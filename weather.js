@@ -38,7 +38,7 @@ function getWeather(e) {
                 <ul class="list-unstyled output text-center text-primary py-2 rounded" style="margin-top:20px;border:2px solid #428bca;font-size:1.5rem;">
                     <li>Weather: <strong>${weather.weather[0].main}</strong></li>
                     <li>Description: <img src='http://openweathermap.org/img/w/${weather.weather[0].icon}.png'>:<strong>${weather.weather[0].description}</strong></li>
-                    <li>Temperature: <strong>${weather.main.temp} &deg;C</strong></li>
+                    <li>Temperature: <strong>${Math.round(weather.main.temp)} &deg;C</strong></li>
                     <li>Pressure: <strong>${weather.main.pressure}hPa</strong></li>
                     <li>Humidity: <strong>${weather.main.humidity} %</strong></li>
                     <li>Min. Temperature: <strong>${weather.main.temp_min} &deg;C</strong></li>
